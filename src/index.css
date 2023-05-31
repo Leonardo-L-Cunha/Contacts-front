@@ -1,0 +1,17 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+
+@layer components{
+    body {
+       @apply bg-bg-primary;
+    }
+    .btn{
+        @apply w-4/5 h-12 bg-bg-secundary text-center text-white border-none rounded
+    }
+}
