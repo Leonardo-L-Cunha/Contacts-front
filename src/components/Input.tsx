@@ -12,7 +12,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
     return (
         <>
             <label className="text-white" htmlFor={type}>{label}</label>
-            <input className="w-full h-12 rounded pl-2 bg-bg-input border border-white" type={type} placeholder={placeholder} ref={ref} {...rest}/>
+            <input className="w-full h-12 rounded pl-2 bg-bg-input border border-white text-white" type={type} placeholder={placeholder} ref={ref} {...rest}/>
         </>
     )
 }

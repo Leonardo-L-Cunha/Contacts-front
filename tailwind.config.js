@@ -13,8 +13,16 @@ export default {
         'bg-gray-segundary': '#1A1D1F',
         'bg-input': '#343B41'
       },
+      colors:{
+        'text-gray' : '#6F767E'
+      },
       width: {
-        '500': '31.25rem'
+        '500': '31.25rem',
+        '90%': '90%',
+        
+      },
+      maxWidth:{
+        '350': '350px'
       },
       height:{
         '500': '31.25rem'
