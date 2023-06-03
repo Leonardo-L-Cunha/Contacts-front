@@ -7,7 +7,7 @@ import { MdOutlineDashboardCustomize, MdOutlineLogout } from 'react-icons/md'
 const NavBar = () => {
     const  [isOpen , setIsOpen] = useState<boolean>(true)
     return(
-        <header className="w-full md:w-48 bg-bg-gray-segundary h-14 md:h-screen flex items-center md:items-stretch">
+        <header className="w-screen md:w-500 bg-bg-gray-segundary h-14 md:h-screen flex items-center md:items-stretch">
             <nav className="pl-4 w-full relative ">
                 <button className="md:hidden" onClick={()=> setIsOpen(!isOpen)}> {isOpen ? <RxHamburgerMenu className="text-white"/> : <AiOutlineClose className="text-white"/>} </button>
                 <div className={isOpen ? "hidden" : "flex flex-col justify-center items-center absolute w-32  h-28 bg-bg-gray-segundary left-2 "} >

@@ -11,7 +11,8 @@ export default {
         'bg-primary': '#111315',
         'bg-secundary': '#475BE8',
         'bg-gray-segundary': '#1A1D1F',
-        'bg-input': '#343B41'
+        'bg-input': '#343B41',
+        'bg-button': ' #1E1E1E'
       },
       colors:{
         'text-gray' : '#6F767E'

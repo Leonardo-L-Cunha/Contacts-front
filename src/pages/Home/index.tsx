@@ -4,7 +4,7 @@ import { AiOutlinePlus } from 'react-icons/ai'
 
 const Home = () => {
     return(
-        <>
+        <div className="md:flex">
             <NavBar/>
             <main className="">
                 <section className="flex flex-col gap-5 text-white text-xs md:text-base w-[90%] mx-auto">
@@ -16,7 +16,7 @@ const Home = () => {
                 <button className="flex items-center bg-bg-secundary text-white h-9 rounded p-2 ml-4 mt-6"> <AiOutlinePlus/> Adicionar Cliente</button>
                 <Clients/>
             </main>
-        </>
+        </div>
     )
 }
 export default Home
