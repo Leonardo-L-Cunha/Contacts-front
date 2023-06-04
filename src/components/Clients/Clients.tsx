@@ -16,7 +16,7 @@ const Clients = () => {
         profession: "Progamador"
     }]
     return(
-        <ul className="flex flex-col md:flex-row md:flex-wrap justify-center items-center mt-5">
+        <ul className="flex mt-5">
             {clients.map((client) => (
                 <Client key={client.completeName} {...client}/>
             ))}

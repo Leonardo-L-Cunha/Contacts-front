@@ -6,8 +6,9 @@ import { MdOutlineDashboardCustomize, MdOutlineLogout } from 'react-icons/md'
 
 const NavBar = () => {
     const  [isOpen , setIsOpen] = useState<boolean>(true)
+    const [ navBar, setNavBar] = useState<string>('dashboard')
     return(
-        <header className="w-screen md:w-500 bg-bg-gray-segundary h-14 md:h-screen flex items-center md:items-stretch">
+        <header className="w-screen md:w-52 bg-bg-gray-segundary h-14 md:h-screen flex items-center md:items-stretch">
             <nav className="pl-4 w-full relative ">
                 <button className="md:hidden" onClick={()=> setIsOpen(!isOpen)}> {isOpen ? <RxHamburgerMenu className="text-white"/> : <AiOutlineClose className="text-white"/>} </button>
                 <div className={isOpen ? "hidden" : "flex flex-col justify-center items-center absolute w-32  h-28 bg-bg-gray-segundary left-2 "} >
@@ -19,6 +20,10 @@ const NavBar = () => {
                             <button className="text-sm flex gap-1 items-center ml-2 mt-3"><MdOutlineLogout/> Sair</button>
                         </li>
                     </ul>
+                </div>
+                <div className=" hidden md:flex flex-col justify-center text-text-gray mt-8 gap-4">
+                    <button onClick={()=> setNavBar('dashboard')} className={`text-sm flex gap-1 items-center p-4 w-28 h-10 rounded ${navBar  === 'dashboard' ? "bg-bg-secundary text-white" : "bg-none" }`} ><MdOutlineDashboardCustomize/>Dashboard</button>
+                    <button  className="text-sm flex gap-1 items-center p-4 w-28 h-10 rounded" ><MdOutlineLogout/> Sair</button>
                 </div>
             </nav>
         </header>

@@ -22,7 +22,7 @@ const Client = ({completeName, avatar, email, phone, profession }:iClients) => {
             </li>
             <div className="w-full max-w-[350px] flex">
                 <button className=" bg-bg-button w-1/2 h-8 rounded-bl-lg text-white text-sm">ver contatos</button>
-                <button className=" bg-white w-1/2  h-8 rounded-br-lg text-xs">Adicionar Cliente</button>
+                <button className=" bg-white w-1/2  h-8 rounded-br-lg text-xs">Adicionar Contato</button>
             </div>
         </div>
     )

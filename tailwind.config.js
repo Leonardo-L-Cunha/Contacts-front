@@ -12,7 +12,8 @@ export default {
         'bg-secundary': '#475BE8',
         'bg-gray-segundary': '#1A1D1F',
         'bg-input': '#343B41',
-        'bg-button': ' #1E1E1E'
+        'bg-button': ' #1E1E1E',
+        'bg-modal': 'rgba(0, 0, 0, 0.5)'
       },
       colors:{
         'text-gray' : '#6F767E'
@@ -23,7 +24,8 @@ export default {
         
       },
       maxWidth:{
-        '350': '350px'
+        '350': '350px',
+        '500': '500px'
       },
       height:{
         '500': '31.25rem'
