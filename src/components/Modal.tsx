@@ -5,7 +5,7 @@ import { Input } from "./Input"
 const Modal = () => {
     const [isClient, setIsClient] = useState<boolean>(true)
     return(
-        <div className=" hidden flex justify-center items-center bg-bg-modal fixed top-0 w-screen h-screen">
+        <div className=" flex justify-center items-center bg-bg-modal fixed top-0 w-screen h-screen">
             <div className=" w-[90%] max-w-[500px] bg-bg-primary">
                 <div className="flex justify-between items-center bg-bg-gray-segundary text-white h-16 p-4">
                     <h1>{isClient? "Adiconar Cliente": "Adicionar Contato"}</h1>
