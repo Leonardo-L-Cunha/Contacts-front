@@ -1,4 +1,4 @@
-# Mobius Client
+# Mobius Client Front-end
 
 ## Descrição
 O projeto Mobius Client é uma aplicação que permite criar usuários, fazer login e gerenciar clientes. Com o Mobius Client, você pode adicionar contatos aos clientes para manter um registro organizado e detalhado.
