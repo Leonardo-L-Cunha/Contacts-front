@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import Client from "./Client/Client";
+import { ClientContext } from "../../provider/ClientContext";
 
 export interface iClients {
+    id: number;
     completeName: string;
     avatar?: string;
     email: string;
@@ -9,16 +12,12 @@ export interface iClients {
 }
 
 const Clients = () => {
-    const clients:iClients[] = [{
-        completeName: 'Leonardo L Cunha',
-        email:'leonavidareal@gmail.com',
-        phone: '73988994770',
-        profession: "Progamador"
-    }]
+   const {client} = useContext(ClientContext)
+   
     return(
-        <ul className="flex mt-5">
-            {clients.map((client) => (
-                <Client key={client.completeName} {...client}/>
+        <ul className="flex mt-5 gap-10 flex-wrap">
+            {client.map((client) => (
+                <Client key={client.id} {...client}/>
             ))}
         </ul>
     )

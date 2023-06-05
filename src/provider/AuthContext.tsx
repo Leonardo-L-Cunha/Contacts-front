@@ -41,7 +41,7 @@ export const AuthProvider = ({ children }:iChidren) => {
         try {
             const { data } = await api.post("auth", payload)
 
-            localStorage.setItem('user', JSON.stringify(data.token))
+            localStorage.setItem('user', data.token)
 
             setTimeout(() => {
                 toast.success('Login realizado com sucesso')
